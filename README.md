@@ -1,11 +1,11 @@
 # 🌍 Dostrip – Smart Travel Planner
 
-Dostrip is a web-based smart travel advisor that uses intelligent tools and user preference data to deliver personalized travel recommendations. The system integrates authentication, cloud storage, and ML-based suggestion tools to help users plan trips with safety, comfort, and relevance.
-
+Dostrip is a web-based platform that helps users plan smart, personalized travel experiences.
 
 ## 📝 Abstract
 
 Dostrip is an intelligent travel planning app that assists users in choosing destinations, activities, and accommodations based on their interests, budget, time, and preferences. Unlike other travel tools, Dostrip offers a **fully personalized** experience through a dynamic questionnaire and intelligent recommendation engine. It ensures travelers have access to smart, filtered suggestions and reviews while providing a user-friendly interface.
+
 
 ## 🌐 Technology Stack
 
@@ -31,13 +31,18 @@ Dostrip is an intelligent travel planning app that assists users in choosing des
 ### 📐 Diagrams
 
 #### Architecture Diagram  
-![Architecture Diagram](./Images/Architecture Diagram.png)
+![Architecture Diagram](./Images/Architecture%20Diagram.png)
+- This diagram illustrates the overall system architecture of Dostrip. It shows how the web server handles user authentication via Google, manages user data with Firebase, and interacts with an intelligent recommendation tool that combines third-party NLP/ML services and our own data models to provide personalized travel suggestions.
+
 
 #### Block Diagram  
-![Block Diagram](./Images/Block Diagram.png)
+![Block Diagram](./Images/Block%20Diagram.png)
+- The block diagram demonstrates the working of the Dostrip system, highlighting the interaction between physical and virtual components. It visually explains the data flow and how different modules—frontend, backend, authentication, and recommendation—connect and operate.
+
 
 #### Sequence Diagram  
-![Sequence Diagram](./Images/Sequence Diagram.png)
+![Sequence Diagram](./Images/Sequence%20Diagram.png)
+- This diagram outlines the sequence of interactions between the user, web app components, and backend services during a typical travel planning session. It captures how user input flows through the system and how recommendations are generated and returned.
 
 
 
