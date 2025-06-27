@@ -28,7 +28,17 @@ Dostrip is an intelligent travel planning app that assists users in choosing des
 - **Secure Login**: Google OAuth
 - **MVC & Layered Architecture Patterns** applied for modular, testable code
 
-> 📊 See architecture diagram, use case, activity, and sequence diagrams in the documentation or Appendix A.
+### 📐 Diagrams
+
+#### Architecture Diagram  
+![Architecture Diagram](./Images/Architecture Diagram.png)
+
+#### Block Diagram  
+![Block Diagram](./Images/Block Diagram.png)
+
+#### Sequence Diagram  
+![Sequence Diagram](./Images/Sequence Diagram.png)
+
 
 
 ## ✨ Key Features
