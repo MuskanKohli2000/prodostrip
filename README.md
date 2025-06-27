@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# 🌍 Dostrip – Smart Travel Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dostrip is a web-based smart travel advisor that uses intelligent tools and user preference data to deliver personalized travel recommendations. The system integrates authentication, cloud storage, and ML-based suggestion tools to help users plan trips with safety, comfort, and relevance.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 📝 Abstract
 
-### `npm start`
+Dostrip is an intelligent travel planning app that assists users in choosing destinations, activities, and accommodations based on their interests, budget, time, and preferences. Unlike other travel tools, Dostrip offers a **fully personalized** experience through a dynamic questionnaire and intelligent recommendation engine. It ensures travelers have access to smart, filtered suggestions and reviews while providing a user-friendly interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌐 Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Area           | Technologies Used                                   |
+|----------------|-----------------------------------------------------|
+| Frontend       | HTML, CSS, JavaScript, React                        |
+| Backend        | Firebase (Auth + Firestore), Recommendation Engine  |
+| Hosting        | Netlify                                             |
+| Auth           | Google Authentication (Firebase)                   |
+| Tools          | Jira, Microsoft Teams, GitHub, VS Code              |
+| Design         | Figma, Draw.io                                      |
+| Documentation  | Overleaf                                            |
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏗️ Architecture & Design
 
-### `npm run build`
+- **Client-Server Model**: React frontend, Firebase backend
+- **Cloud-hosted**: Real-time database & authentication via Firebase
+- **ML Integration**: Third-party tool + custom logic for recommendation generation
+- **Secure Login**: Google OAuth
+- **MVC & Layered Architecture Patterns** applied for modular, testable code
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> 📊 See architecture diagram, use case, activity, and sequence diagrams in the documentation or Appendix A.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Key Features
 
-### `npm run eject`
+- 🧾 **User Registration/Login** via Google Authentication
+- 🧠 **Questionnaire-Based Input** for travel preferences
+- 🧳 **Personalized Travel Recommendations** (places, activities, stays)
+- 🔎 **Filtering Options** for price, activity type, and more
+- 📝 **Review System**: Read & write reviews for destinations
+- 🔒 **Logout & Session Management**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧠 Intelligent Recommendation System
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The heart of Dostrip is its smart suggestion engine:
+- 📥 Gathers user preferences (weather, location, budget, traits, etc.)
+- 🤖 Uses NLP and ML-based algorithms to analyze inputs
+- 📊 Suggests custom travel plans based on real-time and static data
+- 🧩 Combined third-party tools + own data models for accuracy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 🧪 Functional & Non-Functional Requirements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ✅ Functional Requirements:
+- User Registration & Login
+- Questionnaire Submission
+- Travel Recommendation Display
+- Filtering by price/activity
+- User Reviews (read/write)
+- Secure Logout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🚀 Non-Functional Requirements:
+- **Usability**: Clean and responsive UI
+- **Performance**: Fast responses and data load
+- **Availability**: Accessible from any modern browser
+- **Reliability**: Accurate and consistent results
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📊 Software Metrics
 
-### Analyzing the Bundle Size
+| Component                   | LOC  | Unit Tests | Granularity Level |
+|----------------------------|------|------------|-------------------|
+| Signup & Auth              | 56   | 8          | Class/Component   |
+| Login                      | 106  | 7          | Class/Component   |
+| Homepage + Navigation      | 88   | 7          | Class/Component   |
+| Questionnaire              | 92   | 6          | Class/Component   |
+| Form Validation            | 38   | 6          | Class/Component   |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> 🧪 Unit tests written for React components.  
+> 📸 Test snapshots included in Appendix A.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧱 Design Patterns Used
 
-### Advanced Configuration
+### ✅ MVC Architecture:
+- **Model**: Firebase database, Recommendation Engine
+- **View**: React components for UI
+- **Controller**: Auth logic, questionnaire handler, filtering, etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### ✅ Layered Architecture:
+- **Presentation Layer**: React
+- **Business Logic**: Questionnaire handler, recommendation logic
+- **Data Access Layer**: Firebase + ML Tool
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📈 Agile Sprints Overview
 
-### `npm run build` fails to minify
+### 🏁 Sprint 1:
+- ✔ Frontend for Sign-up/Login
+- ✔ Questionnaire UI
+- ✔ Forgot Password
+- ✔ Homepage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 🏁 Sprint 2:
+- ✔ Recommendation System Backend
+- ✔ Admin Console Setup
+- ✔ Filtering Feature (Planned)
+- ✔ Connecting Firebase with Questionnaire
+
+
+
